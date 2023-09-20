@@ -22,8 +22,8 @@
 .progressContainer {
     font-size: 3rem;
     display: flex;
-    max-width: 30%;
-    width: 100%;
+    /* max-width: 30%; */
+    width: 30%;
     /* background-color: red; */
     align-items: center;
     justify-content: space-between;
@@ -128,4 +128,38 @@ button:hover {
 .disab {
     background: lightblue;
     cursor: no-drop;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        /* height: 100vh; */
+        /* background-color: blue; */
+        flex-direction: column;
+        gap: 5rem;
+
+    }
+
+    .progressContainer {
+        font-size: 3rem;
+        display: flex;
+        width: 80%;
+        /* background-color: red; */
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .buttons {
+        width: 63%;
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
